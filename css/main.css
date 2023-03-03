@@ -50,9 +50,9 @@ p {
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
 header {
- text-align: center;
- display: flex;
- justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 header h1 {
@@ -156,8 +156,9 @@ header nav ul li a {
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
-  text-align: center;
   margin-top: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 footer span {
@@ -165,4 +166,39 @@ footer span {
   text-transform: lowercase;
   color: #45610e;
   font-size: 0.875rem;
+}
+
+@media all and (min-width: 768px) {
+  /* *** Tablet styles here *** */
+  .bottom-section .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three  {
+    padding: 0 30px;
+  }
+  
+  .section-one {
+    width: 29%;
+  }
+
+  .section-two {
+    width: 42%;
+    border-top: 0;
+    border-right: 5px solid #eee;
+    border-bottom: 0;
+    border-left: 5px solid #eee;
+  }
+
+  .section-three {
+    width: 29%;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+  /* *** Desktop styles here *** */
 }
